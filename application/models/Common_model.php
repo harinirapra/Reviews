@@ -4,7 +4,7 @@ class Common_model extends CI_Model {
 	public function commonInsert($tableName,$arrayData){
 		$this->db->insert($tableName,$arrayData);
 		$insert_id = $this->db->insert_id();
-		return  $insert_id;
+		//return  $insert_id;
 	}
 	//Common Update Function
 	public function commonUpdate($tableName,$updateArray,$whereCondition){
